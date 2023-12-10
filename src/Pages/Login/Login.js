@@ -105,7 +105,7 @@ const Login = () => {
 
                 </form>
 
-                <p className={LoginStyle.registerLink}>Don't have an account? <Link to="/">Sign up</Link> </p>
+                <p className={LoginStyle.registerLink}>Don't have an account? <Link to="/register">Sign up</Link> </p>
 
 
             </div>

@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import RegisterStyle from './Register.module.css';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { signUp } from '../../services/userService';
-// import {toast} from 'react-toastify'
+// import { ToastContainer,toast} from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 
 
 const Register = () => {
@@ -43,7 +44,9 @@ const Register = () => {
   }
 
   return (
-    <div className={RegisterStyle.mainPage}>
+    <>
+    {/* <ToastContainer/> */}
+        <div className={RegisterStyle.mainPage}>
       <div className={RegisterStyle.container}>
         <div>
           <img src="https://res.cloudinary.com/da21yifxa/image/upload/v1702148433/Screenshot_2023-12-10_002116_e6v1jo.png" alt="" />
@@ -102,18 +105,22 @@ const Register = () => {
           </div>
 
 
-          <button type='submit' className={RegisterStyle.formPrimarySubmit}>
+          <button type='button'
+          //  onClick={(e) => {e.preventDefault(); toast("User registed sucessfully")}}
+            className={RegisterStyle.formPrimarySubmit}>
             Register
           </button>
 
         </form>
 
-        <p className={RegisterStyle.registerLink}> </p>
+        <p className={RegisterStyle.registerLink}>Home <Link to="/login">Login</Link> </p>
 
 
       </div>
 
     </div>
+    </>
+
   )
 }
 
