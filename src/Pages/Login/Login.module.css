@@ -1,0 +1,161 @@
+.mainPage {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://res.cloudinary.com/dtffniutw/image/upload/v1692425810/Group_427319420_1_nllizv.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    /* height: 550px; */
+    justify-content: center;
+    align-items: center;
+    background-color: #d9d9d9;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    gap: 20px;
+    padding: 40px 20px;
+}
+.container .inputForm{
+    display: flex;
+    flex-direction: column;
+gap: 30px;
+}
+
+.companyLogo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+    height: 55px;
+    max-width: 300px;
+}
+
+.companyLogo img {
+    max-height: 100%;
+}
+
+.registerLink>p {
+    font-size: 15px;
+    color: #000000;
+}
+
+.registerLink>p>a {
+    color: #16469D;
+}
+
+.container >div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 16px;
+}
+.container >div img{
+    width: 50%;
+    gap: 16px;
+    margin-bottom: 2%;
+}
+.container form .inputRow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.VisiblePass {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* width: 100%; */
+    right: 10px;
+    color: #585858;
+}
+
+
+
+.container form {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container input {
+    width: 100%;
+    height: 45px;
+    text-indent: 10px;
+    border-radius: 8px;
+    border: 0.5px solid #585858;
+}
+.container input:focus {
+    border: 2px solid #000;
+    border-color: none;
+    outline: none;
+}
+
+.forgotPasswordLink {
+    align-self: flex-end;
+    font-size: 12px;
+
+}
+
+.container button {
+    padding: 10px;
+    background-color: #3a8bba;
+    color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    height: 45px;
+
+}
+
+.container button:hover {
+    background-color: #1752b8;
+}
+
+.container a {
+    text-decoration: none;
+    color: #3a8bba;
+    font-weight: 500;
+}
+
+.registerLink {
+    font-size: 13px;
+}
+
+
+.container a:hover {
+    color: #1752b8;
+}
+
+.container p {
+    color: #697586;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.56px;
+}
+
+.welcome {
+    font-size: 20px;
+    color: #16469D;
+}

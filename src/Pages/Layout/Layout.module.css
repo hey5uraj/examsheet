@@ -1,0 +1,90 @@
+.layoutMain {
+  display: grid;
+  grid-template-rows: 70px 1fr;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.layoutPage {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  overflow-y: auto;
+}
+
+
+.layoutPage.open {
+  grid-template-columns: 1fr;
+}
+
+.layoutPage.open> :nth-child(1) {
+  display: none;
+}
+
+.PageContainer {
+  background-color: #F6F7FB;
+  padding: 30px 20px;
+  overflow: auto;
+  height: calc(100vh - 70px);
+  width: 100%;
+}
+
+.PageContainer ::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+
+/* Track */
+.PageContainer ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+.PageContainer ::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.PageContainer ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.trailDayButton {
+  position: absolute;
+  right: 0;
+  bottom: calc(50% - 70px);
+  transform: rotateZ(90deg);
+  transform-origin: right top;
+  z-index: 500000;
+
+}
+
+.trailDayButton>button {
+
+  width: 150px;
+  height: 35px;
+
+  border-radius: 0px 0px 4px 4px;
+  background-color: #16469D;
+  color: white;
+  font-size: 14px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.trailDayButton>button:hover {
+  background-color: #1d53b9;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 8px;
+  ;
+}
+
+
+@media screen and (max-width:768px) {}
