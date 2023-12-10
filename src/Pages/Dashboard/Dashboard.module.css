@@ -1,0 +1,9 @@
+/* .mainCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+} */
+.mainCenter h1{
+    color: red;
+}

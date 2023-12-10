@@ -1,0 +1,304 @@
+.headerMain {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+    z-index: 5;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.headerContent {
+    display: flex;
+    width: 100%;
+    /* max-width: 1600px; */
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+.MenuTogglerDiv {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.searchBox {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.searchBox input {
+    width: 100%;
+    display: flex;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #cfdded;
+    text-indent: 50px;
+
+}
+
+.searchBox svg {
+    position: absolute;
+    left: 15px;
+    cursor: pointer;
+    color: #585858;
+}
+
+.searchBox input:focus {
+    border: 2px solid #585858;
+}
+.searchBox input::placeholder {
+    text-indent: 50px;
+}
+
+.hamBurger {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.hamBurger>svg {
+    width: 35px;
+    height: 35px
+}
+
+
+.defaultLogoSty {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px dashed black;
+    outline: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.defaultLogoSty:hover {
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.smallProfileIcon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .headerMain {
+
+        padding: 0px 10px;
+
+    }
+
+    .hamBurger {
+        display: flex;
+    }
+
+}
+
+.headerClientLogo {
+    display: flex;
+    height: 100%;
+    /* width: 20%; */
+    align-items: center;
+    gap: 5px;
+}
+
+.headerClientLogo img {
+    max-width: 400px;
+    max-height: 50px;
+
+}
+
+.headerClientLogo h3 {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+
+}
+
+.headerLinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 18px;
+    height: 100%;
+    position: relative;
+}
+
+
+.headerIcons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerIcons>a {
+    color: #44475C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.headerIcons>a:hover {
+    color: #E3F5FF;
+}
+
+.headerIcons>a>svg {
+    height: 26px;
+    width: 26px;
+    padding: 2px;
+    color: #44475C;
+}
+
+.headerProfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.headerProfileimg {
+    height: 40px;
+    width: 40px;
+    background-color: #F5AC38;
+    border-radius: 1000px;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerProfileText {
+
+    display: flex;
+    gap: 0;
+    align-items: center;
+
+
+}
+
+.headerProfileText p {
+    margin: 0;
+    font-weight: 400;
+    font-size: .95rem;
+}
+
+.headerProfileText>svg {
+    height: 22px;
+    width: 22px;
+
+    color: #44475C;
+}
+
+.headerProfileExpand {
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    width: 250px;
+    padding: 8px 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 500;
+
+}
+
+.headerProfileExpand a {
+    text-decoration: none;
+
+}
+
+.headerProfileExpandHeader {
+    display: flex;
+    gap: 8px;
+    padding: 10px 15px;
+    align-items: center;
+    color: #28303F;
+}
+
+.headerProfileExpandHeader:hover {
+    color: #28303F;
+}
+
+.headerProfileExpandHeader div {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #F5AC38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.headerProfileExpandHeader p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.headerProfileExpandList {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+
+}
+
+.headerProfileExpandList a {
+    /* padding: 8px 0; */
+    padding: 8px 15px;
+    color: #28303F;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.headerProfileExpandList a:hover {
+    background-color: #E3F5FF;
+}
+
+@media screen and (max-width:958px) {
+    .searchBox {
+        width: 300px;
+
+    }
+}
+
+@media screen and (max-width:786px) {
+    .searchBox {
+        display: none;
+
+    }
+}
+
+.dashHeader h1{
+    font-size: 25px;
+    color: #16469d;
+    font-family: Inter;
+}
