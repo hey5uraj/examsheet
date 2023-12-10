@@ -1,5 +1,5 @@
 import React from 'react'
-// import welStyle from './Dashboard.module.css'
+import welStyle from './Dashboard.module.css'
 
 
 const Dashboard = () => {
